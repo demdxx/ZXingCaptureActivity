@@ -35,7 +35,7 @@ public final class OpenCameraInterface {
   public static Camera open() {
     Camera camera;
 
-	if (Build.VERSION.SDK_INT<9) {
+	if (Build.VERSION.SDK_INT>=9) {
 	    int numCameras = Camera.getNumberOfCameras();
 	    if (numCameras == 0) {
 	      Log.w(TAG, "No cameras!");
